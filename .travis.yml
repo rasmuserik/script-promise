@@ -1,3 +1,10 @@
 language: node_js
 node_js:
 - node
+deploy:
+  provider: npm
+  email: npmjs@solsort.com
+  api_key:
+    secure: bCeDovz3wF9Jxg4id/3HWN2ypDfHviPQQyucWhVfeLc2wQ2GUA8EJ7y+0KOIMMGZwX3SgQr+BkNYMc3o2GOu14zLbfWsxXGRlncP5yv5iLYCEdDXaaSLtKmgeJjo5+MmlxCi4R8V8ZM1iMeKPJyVkyTwKg+9opZmKu3N1pP0TBgPiFL6zQfIcrz9HO87ZPj8aVci//DBndECMnAqaYAdxOOw/HwlruDgIgBon0AWjC1adQFZCg83BdX4IqnHF6J/AS5uJJA1igU3eZJ3Smf2jRcaCKQLrisuJwm9vmY6WzYRdOzWxfYJ5mupk5PLoJkT82EA43zxkQBCB6zOMj9MAJPBsA1s2b2BpNJiNKdOhDo2wGTWDLtWqlBeqr8I8JfFngtC4c7vkCjx6V9jpn+yyZKa3Fb1f3MI5MxXvgOA1EuBjRLMYZDc1Hz02daIfkrwJmABlBHfpMxIoiWmkUCVcsYoz7+xqSaKUwXzpEpuyZP4hMHjbGNpRPLSCnV35re0AWvxNOUEWVD2iyc58Vl+e+lu9Gxb2fTx8t2u0OWIK35b2N5qow9EyMqFKY/oNT7UC/3hjs19lRYAn72a4y7NZZ2Rzc4KtyZSV+wZ9PNzx/RjLSE/gJSJ7S4bvAIamjoFXW2GHI3UxhhmTj72/Mrqo8xLV/fmB9QRjKw3vuDYqCE=
+  on:
+    repo: solsort/script-promise
