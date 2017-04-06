@@ -1,4 +1,4 @@
-// # Script promis
+// # Script promise
 //
 // Small utility function for loading code through a script tag,
 // and returning a promise that will be fulfilled when the
