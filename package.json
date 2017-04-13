@@ -1,6 +1,6 @@
 {
   "name": "script-promise",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "icon": "icon.png",
   "scripts": {
@@ -23,5 +23,5 @@
     "simple-javascript": "*"
   },
   "main": "lib.js",
-  "browser": "dist.js"
+  "unpkg": "dist.js"
 }
