@@ -3,5 +3,5 @@
 // DO NOT EDIT
 //
 let app = require('./script-promise');
-module.hot && module.hot.accept('./script-promise', render);
+module.hot && module.hot.accept('./script-promise', app.main);
 if(require.main === module) app.main();
