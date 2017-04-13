@@ -73,35 +73,35 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-// # Script promis
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+// # Script promise
 //
 // Small utility function for loading code through a script tag,
 // and returning a promise that will be fulfilled when the
 // code is loaded.
 //
-exports.default = function (src) {
-  return new Promise(function (resolve, reject) {
-    var elem = document.createElement('script');
-    elem.src = src;
-    elem.onload = resolve;
-    elem.onerror = reject;
-    document.head.appendChild(elem);
-  });
-};
+/* harmony default export */ __webpack_exports__["default"] = (src => new Promise((resolve, reject) => {
+  let elem = document.createElement('script');
+  elem.src = src;
+  elem.onload = resolve;
+  elem.onerror = reject;
+  document.head.appendChild(elem);
+}));
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(0);
+
 
 /***/ })
 /******/ ]);
