@@ -78,23 +78,21 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // # Script promise
 //
 // Small utility function for loading code through a script tag,
 // and returning a promise that will be fulfilled when the
 // code is loaded.
 //
-/* harmony default export */ __webpack_exports__["default"] = (src => new Promise((resolve, reject) => {
+module.exports = src => new Promise((resolve, reject) => {
   let elem = document.createElement('script');
   elem.src = src;
   elem.onload = resolve;
   elem.onerror = reject;
   document.head.appendChild(elem);
-}));
+});
 
 /***/ }),
 /* 1 */
