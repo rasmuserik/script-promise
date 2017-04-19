@@ -4,10 +4,19 @@
 // and returning a promise that will be fulfilled when the
 // code is loaded.
 //
-exports.scriptPromise = (src) => new Promise((resolve, reject) => {
-  let elem = document.createElement('script');
-  elem.src = src;
-  elem.onload = resolve;
-  elem.onerror = reject;
-  document.head.appendChild(elem);
-});
+let scripts = {};
+exports.scriptPromise = (url) => {
+  let script = scripts[url];
+  if(!script) {
+    script = new Promise((resolve, reject) => {
+      let elem = document.createElement('script');
+      elem.async = true;
+      elem.onload = resolve;
+      elem.onerror = reject;
+      elem.src = url;
+      document.head.appendChild(elem);
+    });
+    scripts[url] = script;
+  }
+  return script;
+}
